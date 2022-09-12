@@ -20,7 +20,7 @@ import Routes from './routing/Routes';
 import config from './config';
 
 // Flex template application uses English translations as default translations.
-import defaultMessages from './translations/en.json';
+import defaultMessages from './translations/fr.json';
 
 // If you want to change the language of default (fallback) translations,
 // change the imports to match the wanted locale:
@@ -81,7 +81,7 @@ const setupLocale = () => {
   if (isTestEnv) {
     // Use english as a default locale in tests
     // This affects app.test.js and app.node.test.js tests
-    config.locale = 'en';
+    config.locale = 'fr';
     return;
   }
 
