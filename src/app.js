@@ -19,7 +19,6 @@ import routeConfiguration from './routing/routeConfiguration';
 import Routes from './routing/Routes';
 import config from './config';
 import 'moment/locale/fr';
-import localeData from 'react-intl/locale-data/fr';
 
 
 // Flex template application uses English translations as default translations.
