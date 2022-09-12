@@ -12,13 +12,13 @@ import { Provider } from 'react-redux';
 import difference from 'lodash/difference';
 import mapValues from 'lodash/mapValues';
 import moment from 'moment';
+import 'moment/locale/fr';
 import { IntlProvider } from './util/reactIntl';
 import { IncludeMapLibraryScripts } from './util/includeScripts';
 import configureStore from './store';
 import routeConfiguration from './routing/routeConfiguration';
 import Routes from './routing/Routes';
 import config from './config';
-import 'moment/locale/fr';
 
 
 // Flex template application uses English translations as default translations.
