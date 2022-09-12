@@ -68,7 +68,7 @@ const render = (store, shouldHydrate) => {
       ]);
     })
     .then(([_, fetchedAssets]) => {
-      const translations = fetchedAssets?.translations?.data || {};
+      const translations = fetchedAssets.translations.data || {};
       if (shouldHydrate) {
         ReactDOM.hydrate(
           <ClientApp store={store} hostedTranslations={translations} />,
@@ -96,7 +96,7 @@ const setupAnalyticsHandlers = () => {
 
   // Add Google Analytics 4 (GA4) handler if tracker ID is found
   if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID) {
-    if (window?.gtag) {
+    if (window.gtag) {
       handlers.push(new GoogleAnalyticsHandler(window.gtag));
     } else {
       // Some adblockers (e.g. Ghostery) might block the Google Analytics integration.
