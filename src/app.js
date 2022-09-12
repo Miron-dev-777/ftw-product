@@ -46,7 +46,7 @@ import defaultMessages from './translations/fr.json';
 // import messagesInLocale from './translations/fr.json';
 const messagesInLocale = {};
 
-// If translation key is missing from `messagesInLocale` (e.g. fr.json),
+// If translation kesy is missing from `messagesInLocale` (e.g. fr.json),
 // corresponding key will be added to messages from `defaultMessages` (en.json)
 // to prevent missing translation key errors.
 const addMissingTranslations = (sourceLangTranslations, targetLangTranslations) => {
